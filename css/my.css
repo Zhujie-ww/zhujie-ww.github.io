@@ -64,3 +64,17 @@
 .diy-font{
     font-family: 'maobi';
 }
+
+/* �޸���ҳ�ֲ��ı����С */
+@media only screen and (max-width: 601px) {
+    .bg-cover .title {
+        font-size: 2.5rem;
+    }
+}
+
+/* �޸Ĳ��ͱ���������С */
+@media only screen and (max-width: 601px) {
+    header .brand-logo .logo-span {
+        font-size: 1.5rem;
+    }
+}
