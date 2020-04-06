@@ -4,26 +4,39 @@
     .container {
         width: 95%;
     }
+    header .brand-logo .logo-span {
+        font-size: 1rem;
+    }
+    .bg-cover .title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.85em;
+        margin-bottom: 20px;
+        position: relative;
+    }
 }
-
 /*中等屏幕下(平板类)的样式*/
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     .container {
         width: 90%;
+    }
+    header .brand-logo .logo-span {
+        font-size: 2rem;
+    }
+    .bg-cover .title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.85em;
+        margin-bottom: 20px;
+        position: relative;
     }
 }
 
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
     .container {
-        width: 90%;
+        width: 85%;
         max-width: 1125px;
-    }
-
-    .head-container {
-        position: absolute;
-        padding: 0px 30px;
-        width: 100%;
     }
 
     .post-container {
@@ -31,8 +44,19 @@
         margin: 0 auto;
         max-width: 1250px;
     }
-}
 
+    header .brand-logo .logo-span {
+        font-size: 2rem;
+    }
+
+    .bg-cover .title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.85em;
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
 body {
     background-color: #eaeaea;
     margin: 0;
@@ -248,7 +272,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #66b2ff 0%, #d966ff 100%);
 }
 
 .text-color {
