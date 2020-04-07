@@ -1,0 +1,17 @@
+
+[{
+    "name": "Refrain",
+    "artist": "Anan Ryoko",
+    "url": "/medias/music/music01.mp3",
+    "cover": "/medias/music/music01.png"
+}, {
+    "name": "DJ OKAWARI",
+    "artist": "Luv Letter",
+    "url": "/medias/music/music02.mp3",
+    "cover": "/medias/music/music03.png"
+}, {
+    "name": "Foxtail-Grass Studio",
+    "artist": "歳月-雲流れ",
+    "url": "/medias/music/music03.mp3",
+    "cover": "/medias/music/music02.png"
+}]
