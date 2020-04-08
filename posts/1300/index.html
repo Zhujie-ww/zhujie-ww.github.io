@@ -5,13 +5,14 @@
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <meta name="keywords" content="helloworld, C��C++��python������ѧϰ���˹����ܣ���ѧ���㷨�����ݽṹ">
-    <meta name="description" content="$ \alpha\beta $$ \alpha_\beta = \gamma_\delta $int main (void){
+    <meta name="description" content="$ Y=f(x) $
+$ \alpha\beta $$ \alpha_\beta = \gamma_\delta $int main (void){
 printf(&#34;hello ，world！&#34;)
 return 0;
 }
 
 
-        document.q">
+       ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -473,36 +474,22 @@ return 0;
     
 			</div>
                 
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    66
-                </div>
-                
 
                 
-                <div class="info-break-policy">
-                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
-                </div>
-                
 				
                 
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
             </div>
             
         </div>
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="alpha-beta"><a href="#alpha-beta" class="headerlink" title="$ \alpha\beta $"></a>$ \alpha\beta $</h1><h1 id="alpha-beta-gamma-delta"><a href="#alpha-beta-gamma-delta" class="headerlink" title="$ \alpha_\beta = \gamma_\delta $"></a>$ \alpha_\beta = \gamma_\delta $</h1><pre><code class="lang-+c">int main (void){
+                <p>$ Y=f(x) $</p>
+<h1 id="alpha-beta"><a href="#alpha-beta" class="headerlink" title="$ \alpha\beta $"></a>$ \alpha\beta $</h1><h1 id="alpha-beta-gamma-delta"><a href="#alpha-beta-gamma-delta" class="headerlink" title="$ \alpha_\beta = \gamma_\delta $"></a>$ \alpha_\beta = \gamma_\delta $</h1><pre class="line-numbers language-lang-c"><code class="language-lang-c">int main (void){
 printf("hello ，world！")
 return 0;
 }
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -837,13 +824,14 @@ return 0;
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            $ \alpha\beta $$ \alpha_\beta = \gamma_\delta $int main (void){
+                            $ Y=f(x) $
+$ \alpha\beta $$ \alpha_\beta = \gamma_\delta $int main (void){
 printf("hello ，world！")
 return 0;
 }
 
 
-        document.q
+       
                         
                     </div>
                     <div class="publish-info">
@@ -927,10 +915,6 @@ return 0;
 
 <!-- 代码块折行 -->
 
-<style type="text/css">
-code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
-</style>
-
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget">
@@ -957,7 +941,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h1, h2, h3, h4, h5'
         });
 
         // modify the toc link href to support Chinese.
@@ -969,7 +953,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -1053,9 +1037,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
-            
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.4k</span>&nbsp;字
             
             
             
@@ -1307,7 +1288,24 @@ WIDGET = {FID: 'EKYPb0tteu'}
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
 </script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 </body>
