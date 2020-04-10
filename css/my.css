@@ -58,7 +58,7 @@
 }
 @font-face{
     font-family: 'maobi';
-    src: url('../font/maobi.ttf');
+    src: url('https://cdn.jsdelivr.net/gh/Zhujie-ww/zhujie-ww.github.io/font/maobi.ttf');
 }
 
 .diy-font{
