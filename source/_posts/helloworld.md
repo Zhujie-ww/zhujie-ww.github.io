@@ -1,12 +1,18 @@
 ---
 abbrlink: 1300
+mathjax: true
 ---
 
+$ Y=f(x) $
+
+#$ \alpha\beta $
+
+#$ \alpha_\beta = \gamma_\delta $
 
 
-
-#include<stdio.h>
-int main(void){
-
-printf("asdkf!")
-return 0;}
+```c
+int main (void){
+printf("hello ，world！")
+return 0;
+}
+```

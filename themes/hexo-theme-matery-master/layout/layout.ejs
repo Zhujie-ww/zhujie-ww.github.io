@@ -111,8 +111,28 @@ if (windowWidth > 768) {
 }
 </script>
 
-{% if theme.custom_highlight_theme %} {% endif %}
+
+<!-- 今日天气快讯 --> <% if (theme.weather.enable) { %> <%- partial('_widget/weather') %> <% } %>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

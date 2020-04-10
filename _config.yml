@@ -16,6 +16,9 @@ timezone: ''
 url: https://zhujie-ww.github.io/
 root: /
 permalink: posts/:abbrlink/
+abbrlink: 
+    alg: crc32 #算法：
+    rep: hex #进制
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -48,16 +51,14 @@ future: true
 highlight:
    enable:  false
    line_number: true
-   auto_detect: true
+   auto_detect: false
    tab_replace:
    
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: false    # default false
-  custom_css:
-  
-
+  theme: 'default'
+  line_number: true    # default false
+  custom_css: 'path/to/your/custom.css'     # optional
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -100,6 +101,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+
+
 theme: hexo-theme-matery-master
 
 # Deployment
@@ -124,9 +127,6 @@ auto_category:
  enable: true
  depth:
 
-abbrlink: 
-    alg: crc32 #算法：
-    rep: hex #进制
 
 backup: 
     type: git 
@@ -135,4 +135,22 @@ backup:
     repository: 
             github: https://github.com/Zhujie-ww/zhujie-ww.github.io.git,backup
 
-    
+lazyload:
+  enable: true 
+  onlypost: true # 是否只对文章的图片做懒加载
+  loadingImg: /loading.gif
+  
+all_minifier: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

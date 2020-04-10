@@ -10,9 +10,10 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-bookmark
-  Archives:
-    url: /archives
-    icon: fas fa-archive
+#此处把归档菜单栏干掉
+#  Archives:
+#    url: /archives
+#  icon: fas fa-archive
   About:
     url: /about
     icon: fas fa-user-circle
@@ -120,7 +121,7 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://zhujie-ww.github.io
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
@@ -142,7 +143,7 @@ socialLink:
 # 可以在某篇文章的 Front-matter 中再加上`toc: false`，使该篇文章关闭TOC目录功能
 toc:
   enable: true
-  heading: h2, h3, h4
+  heading: h1, h2, h3, h4, h5
   collapseDepth: 0 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
@@ -151,7 +152,7 @@ code:
   lang: true # 代码块是否显示名称
   copy: true # 代码块是否可复制
   shrink: true # 代码块是否可以收缩
-  break: false # 代码是否折行
+  break: true # 代码是否折行
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
@@ -173,9 +174,9 @@ copyright:
 # you also need to add `mathjax: true` to the Front-matter of the post that needs to be rendered.
 # 是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，
 # 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
-mathjax:
-  enable: false
-  cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+mathjax: 
+   enable: true
+   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Post word count, reading duration, site total word count.
 # Before you activate, please confirm that you have installed the hexo-wordcount plugin,
@@ -184,13 +185,13 @@ mathjax:
 # 文章信息--若要开启文章字数统计，需要安装 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
 postInfo:
   date: true # 发布日期
-  update: false # 更新日期
-  wordCount: # 文章字数统计
-    enable: true # 将这个值设置为 true 即可.
-    postWordCount: true
-    min2read: true
+  update: true # 更新日期
+wordCount: # 文章字数统计
+  enable: true # 将这个值设置为 true 即可.
+  postWordCount: true
+  min2read: true
   totalCount: true     
-  readCount: true
+readCount: true
 
 
 # Whether to activate the 'love' effect of clicking on the page.
@@ -201,9 +202,9 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
-  career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  avatar: /medias/avatars/saberQin.png
+  career: 哈佛大学 | 计算机技术 | NLP自然语言处理
+  introduction: Hello，我是哈佛大学计算机技术专业硕士研究生。研究方向是Nlp，欢迎互相交流！
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -214,7 +215,7 @@ myProjects:
     hexo-theme-matery:
       icon: fas fa-file-alt
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
+      url: https://github.com/Zhujie-ww/zhujie-ww.github.io
       desc: This is a Hexo blog theme with 'Material Design' and responsive design.
     Fenix:
         icon: fas fa-database
@@ -233,49 +234,53 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
+    算法:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
       percent: 85%
-    JavaScript:
+    C、C++:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
       percent: 80%
-    HTML5:
+    python:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
       percent: 80%
-    CSS:
+    数学:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
       percent: 70%
-    SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 90%
-    程序设计:
-      background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 75%
+   # MYSQL:
+      #background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
+      #percent: 90%
+    #程序设计:
+     # background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
+      #percent: 75%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myGallery:
-  enable: true
+  enable: false
   data:
-    - /medias/featureimages/0.jpg
-    - /medias/featureimages/1.jpg
-    - /medias/featureimages/2.jpg
+    -medias/featureimages/0.jpg
+    -medias/featureimages/1.jpg
+    -medias/featureimages/2.jpg
+    -medias/featureimages/3.jpg
+    -medias/featureimages/4.jpg
+    -medias/featureimages/5.jpg
+    -medias/featureimages/6.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
-postCalendar: true
+postCalendar: false
 
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: false
-  owner:
-  repo:
+  owner: zhujie-ww
+  repo: http://zhujie-ww.github.io/
   oauth:
-    clientId:
-    clientSecret:
-  admin:
+    clientId: dcb4b9e721c758775bbe
+    clientSecret: a30f4c53baea60a59565c73b2e5c5c32b7061efa
+  admin: zhujie-ww
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -297,15 +302,15 @@ disqus:
 # Livere 来必力评论模块的配置，默认为不激活
 livere:
   enable: false
-  uid:
+  uid: MTAyMC80OTU2My8yNjA1NA==
 
 # The configuration of the Valine comment module is not activated by default.
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:
-  appKey:
+  enable: true
+  appId: yqApb55Gz6hS1sjB62cHfdGL-MdYXbMMI
+  appKey: vFhcbljeFhOXmT8ep4CnL2Lk
   notify: false
   verify: false
   visitor: true
@@ -519,3 +524,14 @@ icp:
   enable: false
   url: # 备案链接
   text: # 备案信息
+  
+  
+  
+  
+# 天气接口插件
+weather:
+  enable: true
+  
+  
+  
+  
