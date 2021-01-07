@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+
+* {
+  margin: 0;#0
+  font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size:100%;
+  box-sizing: border-box;
+}
+
+#header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size:100%;  
+  text-align: center;
+  background-image: url(image/1.gif); 
+  background-repeat: repeat; 
+  font-size: 70px;/*70PX*/
+  padding: 4rem;#2
+}
+
+.main {
+  margin: auto;
+  padding: 2rem;/*9REM*/
+  display: block;
+  min-height: 70vh;
+  max-height: 180vh;
+  
+}
+
+#textarea {
+  border:1px solid;
+  max-width: 600px;
+  background-color: #FFFFFF;
+  display: block;
+  float: left;
+  width: 100%;
+  font-size: xxx-large;
+  min-height: 50vh;
+  max-height: 80vh;
+  font-family:'Cormorant Garamond', serif;
+  margin-top:40px;
+  margin-left:200px;
+}
+
+#button {
+  color: #280000
+  font-family:'Cormorant Garamond', serif;
+  padding: 2px;/*1*/
+  margin: 0rem 2rem;/*0rem 1rem;*/
+  padding: 1rem 2rem;/*1rem 2rem;*/
+  border:2px solid;
+  border-radius:15px;
+  background-color: #FFFFFF;
+  font-size: x-large;
+}
+
+.output {
+  display: block;
+  box-sizing: border-box;
+  background-color: #F0F0F0;
+  width: 100%;
+  max-width: 600px;
+  border:1px solid;
+  min-height: 50vh;#40vh;
+  max-height: 80vh;#50vh;
+  #overflow: scroll;
+ #border-radius:15px;
+  float: right;
+  font-size: xxx-large;#large;
+  font-family:'Cormorant Garamond', serif;
+  margin-top:40px;
+  margin-right:200px;
+}
+
+.footer {
+  width: 100%;
+  padding: 1rem;#1
+  background-image: url(image/2.gif);
+  background-color: #585754;
+  text-align: center;
+
+ 
+}
+
+.footer p {
+  max-width: 400px;#600
+}
